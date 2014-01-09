@@ -42,7 +42,7 @@
 						success: function(data){        
 							var trackData = eval(data);
 							var resultList = trackData.track.name + '-' + ((trackData.track.duration/1000)/60);
-							$('#result').append(resultList + '<\br>');
+							$('#result').append('<div><div style="display:inline;width:200px">' + trackData.track.name + '</div><div style="display:inline">' + ((trackData.track.duration/1000)/60) + '</div></div>');
 						}
 					});
 				});
